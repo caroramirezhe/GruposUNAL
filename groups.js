@@ -43,7 +43,7 @@ const groups = [
     verified: false
   },
   {
-    name: "TuringBox",
+    name: "TuringBox (Inactivo)",
     short: "TB",
     description: "Tecnologías 4.0, inteligencia artificial, desarrollo web, videojuegos y proyectos tecnológicos.",
     campus: "intersedes",
