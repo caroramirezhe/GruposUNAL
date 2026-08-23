@@ -49,6 +49,8 @@ const groups = [
     campus: "intersedes",
     categories: ["IA", "Programación", "Innovación"],
     instagram: "https://www.instagram.com/turingbox/",
+    types: ["Grupo estudiantil"],
+    pgp: false,
     website: "https://sites.google.com/unal.edu.co/asignaturas/grupos-estudiantiles/turingbox",
     email: "",
     active: false,
@@ -65,6 +67,7 @@ const groups = [
     pgp: true,
     website: "",
     email: "",
+    active: false,
     verified: false
   },
     {
@@ -130,6 +133,8 @@ const groups = [
     campus: "UNAL Bogotá",
     categories: ["Innovación"],
     instagram: "https://www.instagram.com/kartun_grupo/",
+    types: ["Grupo estudiantil"],
+    pgp: true,
     website: "",
     email: "",
     active: true,
