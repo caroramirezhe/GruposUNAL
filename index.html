@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Directorio de grupos estudiantiles de la Universidad Nacional de Colombia enfocados en tecnología, ingeniería e innovación.">
+  <title>Conecta UNAL | Grupos estudiantiles de tecnología</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#" aria-label="Conecta UNAL, inicio">
+        <span class="brand-mark">UN</span>
+        <span>Conecta <strong>UNAL</strong></span>
+      </a>
+      <a class="nav-link" href="#grupos">Explorar grupos</a>
+    </nav>
+
+    <div class="hero-content container">
+      <div class="eyebrow">UNIVERSIDAD NACIONAL DE COLOMBIA · TECNOLOGÍA</div>
+      <h1>Encuentra tu<br><span>comunidad tecnológica.</span></h1>
+      <p class="hero-text">
+        Un directorio rápido para descubrir grupos estudiantiles, capítulos y comunidades
+        relacionadas con tecnología, ingeniería, innovación y STEM.
+      </p>
+      <a class="primary-btn" href="#grupos">Ver grupos <span>↓</span></a>
+    </div>
+
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+  </header>
+
+  <main>
+    <section class="directory container" id="grupos">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">DIRECTORIO</p>
+          <h2>Grupos estudiantiles</h2>
+        </div>
+        <p id="resultCount" class="result-count"></p>
+      </div>
+
+      <div class="controls" aria-label="Filtros del directorio">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Buscar por nombre, tema o sede..." autocomplete="off">
+        </label>
+
+        <div class="filters" role="group" aria-label="Filtrar por categoría">
+          <button class="filter active" data-category="Todos">Todos</button>
+          <button class="filter" data-category="Programación">Programación</button>
+          <button class="filter" data-category="IA">IA / Datos</button>
+          <button class="filter" data-category="Ciberseguridad">Ciberseguridad</button>
+          <button class="filter" data-category="Robótica">Robótica</button>
+          <button class="filter" data-category="IEEE">IEEE / STEM</button>
+          <button class="filter" data-category="Innovación">Innovación</button>
+        </div>
+      </div>
+
+      <div id="groupsGrid" class="groups-grid"></div>
+
+      <div id="emptyState" class="empty-state" hidden>
+        <div class="empty-icon">⌁</div>
+        <h3>No encontramos grupos</h3>
+        <p>Prueba con otro término o cambia el filtro.</p>
+      </div>
+    </section>
+
+    <section class="how container">
+      <div class="how-card">
+        <div class="how-number">01</div>
+        <div>
+          <p class="section-kicker">¿BUSCAS UN GRUPO?</p>
+          <h2>Explora, conoce y contacta.</h2>
+          <p>
+            Cada tarjeta te lleva directamente al canal público disponible del grupo:
+            Instagram, sitio web o correo institucional.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>Conecta UNAL</strong>
+        <p>Directorio independiente de comunidades estudiantiles.</p>
+      </div>
+      <p class="disclaimer">
+        Este sitio no es un directorio oficial de la Universidad Nacional de Colombia.
+        Verifica los canales oficiales de cada grupo antes de compartir información.
+      </p>
+    </div>
+  </footer>
+
+  <script src="groups.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
