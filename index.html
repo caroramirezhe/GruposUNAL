@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Directorio de grupos estudiantiles de la Universidad Nacional de Colombia enfocados en tecnología, ingeniería e innovación.">
-  <title>Conecta UNAL | Grupos estudiantiles de tecnología</title>
+  <title>Grupos UNAL | Grupos estudiantiles de tecnología</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -47,16 +47,66 @@
           <input id="searchInput" type="search" placeholder="Buscar por nombre, tema o sede..." autocomplete="off">
         </label>
 
-        <div class="filters" role="group" aria-label="Filtrar por categoría">
-          <button class="filter active" data-category="Todos">Todos</button>
-          <button class="filter" data-category="Programación">Programación</button>
-          <button class="filter" data-category="IA">IA / Datos</button>
-          <button class="filter" data-category="Ciberseguridad">Ciberseguridad</button>
-          <button class="filter" data-category="Robótica">Robótica</button>
-          <button class="filter" data-category="IEEE">IEEE / STEM</button>
-          <button class="filter" data-category="Innovación">Innovación</button>
-        </div>
-      </div>
+
+        <!-- FILTRO POR TIPO -->
+<div class="filter-section">
+  <p class="filter-title">Tipo de comunidad</p>
+  <div class="filters" role="group" aria-label="Filtrar por tipo de comunidad">
+    <button class="filter type-filter active" data-type="Todos">
+      Todos
+    </button>
+    <button class="filter type-filter" data-type="Grupo estudiantil">
+      Grupos estudiantiles
+    </button>
+    <button class="filter type-filter" data-type="Semillero">
+      Semilleros
+    </button>
+  </div>
+</div>
+
+
+<!-- FILTRO POR PGP -->
+<div class="filter-section">
+  <p class="filter-title">Proyectos PGP</p>
+  <div class="filters" role="group" aria-label="Filtrar por proyectos PGP">
+    <button class="filter pgp-filter active" data-pgp="Todos">
+      Todos
+    </button>
+    <button class="filter pgp-filter" data-pgp="true">
+      Con proyectos PGP
+    </button>
+  </div>
+</div>
+
+
+<!-- FILTRO TEMÁTICO -->
+<div class="filter-section">
+  <p class="filter-title">Área</p>
+  <div class="filters" role="group" aria-label="Filtrar por área">
+    <button class="filter category-filter active" data-category="Todos">
+      Todas
+    </button>
+    <button class="filter category-filter" data-category="Programación">
+      Programación
+    </button>
+
+    <button class="filter category-filter" data-category="IA">
+      IA / Datos
+    </button>
+    <button class="filter category-filter" data-category="Ciberseguridad">
+      Ciberseguridad
+    </button>
+    <button class="filter category-filter" data-category="Robótica">
+      Robótica
+    </button>
+    <button class="filter category-filter" data-category="IEEE">
+      IEEE / STEM
+    </button>
+    <button class="filter category-filter" data-category="Innovación">
+      Innovación
+    </button>
+  </div>
+</div>
 
       <div id="groupsGrid" class="groups-grid"></div>
 
@@ -85,11 +135,12 @@
   <footer>
     <div class="container footer-inner">
       <div>
-        <strong>Conecta UNAL</strong>
+        <strong>Grupos UNAL</strong>
         <p>Directorio independiente de comunidades estudiantiles.</p>
       </div>
       <p class="disclaimer">
         Este sitio no es un directorio oficial de la Universidad Nacional de Colombia.
+        Es una página de consulta rápida realizada por representantes estudiantiles.
         Verifica los canales oficiales de cada grupo antes de compartir información.
       </p>
     </div>
