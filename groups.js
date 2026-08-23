@@ -54,7 +54,7 @@ const groups = [
     website: "https://sites.google.com/unal.edu.co/asignaturas/grupos-estudiantiles/turingbox",
     email: "",
     active: false,
-    verified: true
+    verified: false
   },
   {
     name: "IEEE WIE UNAL",
@@ -122,6 +122,20 @@ const groups = [
     types: ["Semillero"],
     pgp: false,
     website: "https://wsimg-un.vercel.app/es",
+    email: "",
+    active: true,
+    verified: false
+  },
+    {
+    name: "ENIQ",
+    short: "ENIQ",
+    description: "IA • Cuántica • Programación - Charlas, noticias y recursos tech",
+    campus: "UNAL Bogotá",
+    categories: ["Innovación", "IA", "Programación"],
+    instagram: "https://www.instagram.com/eniq.ai/",
+    types: ["Grupo estudiantil"],
+    pgp: false,
+    website: "https://grupoeniq.tech/",
     email: "",
     active: true,
     verified: false
